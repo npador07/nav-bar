@@ -82,12 +82,54 @@ function App() {
   />
 </div>
 
-        <div id="about" className="h-screen bg-green-200 flex items-center justify-center text-3xl font-bold">
-          Section 2
-        </div>
-        <div id="products" className="h-screen bg-blue-200 flex items-center justify-center text-3xl font-bold">
-          Section 3
-        </div>
+        <div
+  id="about"
+  className="min-h-screen bg-orange-100 flex flex-col items-center justify-center px-8 text-center"
+>
+  <h2 className="text-4xl font-bold text-orange-900 mb-4">
+    About Us
+  </h2>
+
+  <p className="text-lg text-orange-800 max-w-2xl leading-relaxed">
+    We began operations in November 2025 with a small, passionate team dedicated
+    to providing quality service to the students of Central Philippine University.
+    Our mission is to create a warm and inviting space where everyone can enjoy
+    great coffee, good food, and a welcoming atmosphere.
+  </p>
+</div>
+
+        <div
+  id="products"
+  className="min-h-screen bg-orange-50 py-20 px-6"
+>
+  <h2 className="text-4xl font-bold text-orange-900 text-center mb-12">
+    Our Products
+  </h2>
+
+  {/* Product Grid */}
+  <div className="grid md:grid-cols-3 gap-10 max-w-5xl mx-auto">
+
+    {/* Product 1 */}
+    <div className="bg-white rounded-xl shadow-md p-6 text-center border border-orange-200">
+      <h3 className="text-2xl font-semibold text-orange-900 mb-2">Hot Coffee</h3>
+      <p className="text-orange-700">Freshly brewed hot coffee made daily.</p>
+    </div>
+
+    {/* Product 2 */}
+    <div className="bg-white rounded-xl shadow-md p-6 text-center border border-orange-200">
+      <h3 className="text-2xl font-semibold text-orange-900 mb-2">Iced Coffee</h3>
+      <p className="text-orange-700">Perfectly chilled refreshments for warm days.</p>
+    </div>
+
+    {/* Product 3 */}
+    <div className="bg-white rounded-xl shadow-md p-6 text-center border border-orange-200">
+      <h3 className="text-2xl font-semibold text-orange-900 mb-2">Snacks</h3>
+      <p className="text-orange-700">Pastries, sandwiches, and light snacks.</p>
+    </div>
+
+  </div>
+</div>
+
       </main>
     </div>
   );
