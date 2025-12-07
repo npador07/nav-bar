@@ -24,26 +24,26 @@ function App() {
         }`}
       >
         <div className="max-w-screen-lg mx-auto p-4 flex justify-between items-center">
-          <a href="#home" className="font-bold text-xl">
+          <a href="#home" className="font-bold text-white text-xl">
             B & N Coffee House
           </a>
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex gap-6">
-            <a href="#home" className="hover:text-blue-500">
+            <a href="#home" className="hover:text-blue-500 text-white">
               Home
             </a>
-            <a href="#about" className="hover:text-blue-500">
+            <a href="#about" className="hover:text-blue-500 text-white">
               About
             </a>
-            <a href="#products" className="hover:text-blue-500">
+            <a href="#products" className="hover:text-blue-500 text-white">
               Products
             </a>
           </nav>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden focus:outline-none text-2xl"
+            className="md:hidden focus:outline-none text-2xl text-white"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             ☰
@@ -51,21 +51,16 @@ function App() {
         </div>
 
         {/* Mobile Menu */}
-        <div
-          className={`md:hidden flex-col gap-4 p-4 bg-white shadow-md transition-all duration-300 ${
-            menuOpen ? "flex" : "hidden"
-          }`}
-        >
-          <a href="#home" className="hover:text-blue-500">
-            Home
-          </a>
-          <a href="#about" className="hover:text-blue-500">
-            About
-          </a>
-          <a href="#products" className="hover:text-blue-500">
-            Products
-          </a>
-        </div>
+       <div
+  className={`md:hidden flex-col gap-4 p-4 bg-white shadow-md transition-all duration-300 ${
+    menuOpen ? "flex" : "hidden"
+  }`}
+>
+  <a href="#home" className="text-orange-900 hover:text-orange-600">Home</a>
+  <a href="#about" className="text-orange-900 hover:text-orange-600">About</a>
+  <a href="#products" className="text-orange-900 hover:text-orange-600">Products</a>
+</div>
+
       </header>
 
       {/* Page Content */}
